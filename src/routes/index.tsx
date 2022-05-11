@@ -7,7 +7,7 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />} />
-      <Route path="/repository" caseSensitive element={<Repository />} />
+      <Route path="/repositories/:repository/:name" element={<Repository />} />
     </Routes>
   );
 }
